@@ -1,4 +1,4 @@
-//dispatch function 
+//dispatch functions
 
 export const increase = (quantity)=>{
     return {

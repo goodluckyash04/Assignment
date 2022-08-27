@@ -5,7 +5,7 @@ import {
   decrease,
   withdraw,
   deposite,
-} from "../State/Action-Creator";
+} from "../State/Action-Creator/index";
 export default function Cart() {
   const dispatch = useDispatch();
   const [amount,setAmount] = useState("")
@@ -39,7 +39,7 @@ export default function Cart() {
           Deposite
         </button>
         <input
-          type="text"
+          type="number"
           class="form-control"
           placeholder="Enter Amount"
           aria-label="Username"

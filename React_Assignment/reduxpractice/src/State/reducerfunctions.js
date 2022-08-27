@@ -21,8 +21,10 @@ export const updatebalance=(state=initialState.balance,action)=>{
         return state+action.payload
     }
    else if(action.type==="withdraw"){
-        if(state !== 0) {
+        if(state !== 0 && action.payload<state) {
             return  state-action.payload
+        }else if(action.payload>state){
+            alert("Insufficiant Balance.")
         }
     }
     else{
