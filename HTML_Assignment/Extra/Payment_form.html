@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goodluck Payment Gateway</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div class="container">
+    <form action="">
+        <h2 class="main_heading">Payment Form</h2>
+        <p style="color: red;">*Required Fields</p>
+        <h3>Student Information</h3>
+        <p>Name<span style="color:#FF0000">*</span><input type="text" name="name" required placeholder="Enter Full Name" style="width: 50%;" >
+        Roll Number<span style="color:#FF0000">*</span>
+        <input type="text" pattern="[0-9]{2}[a-z,A-Z]{2}[0-9]{3}" name="rollnumber" id="rollnumber" placeholder="22CS001" style="width: 31.4%;"></p>
+        <p>
+        <fieldset>
+        <legend>Gender<span style="color:#FF0000">*</span></legend>
+            Male <input type="radio" name="gender" id="gender" required >
+            Female <input type="radio" name="gender" id="gender" required>
+        </fieldset>
+        </p>
+        <p>Address <textarea name="address" id="address" cols="100" rows="10" placeholder="Enter Your Address"></textarea> </p>
+        <p>Email<span style="color:#FF0000">*</span> <input type="email" name="email" id="email" required placeholder="email@xyz.com"></p>
+        <p>Pincode <input type="number" name="pincode" id="pincode" placeholder="400001"></p>
+        <h3>Card Details</h3>
+        <p>Card Type<span style="color:#FF0000">*</span>
+            <select name="card_type" id="cardtype" required >
+                <option value="">--Select a Card Type--</option>
+                <option value="visa">Visa</option>
+                <option value="rupay">Rupay</option>
+                <option value="mastercard">MasterCard</option>
+            </select>
+        </p>
+        <p>Card Number<span style="color:#FF0000">*</span> <input type="number" name="card_number" id="card_number" required placeholder="xxxx-xxxx-xxxx-xxxx"></p>
+        <p>Expiration Date<span style="color:#FF0000">*</span><input type="date" name="exp_date" id="exp_date" required></p>
+        <p>CVV<span style="color:#FF0000">*</span><input type="password" name="cvv" required placeholder="xxx"></p>
+        <div class="con">
+        <input type="submit" value="Pay Now">
+    </div>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+li a:visited{
+    color: darkmagenta;
+}
+li a:hover{
+    background-color: burlywood;
+    color: antiquewhite;
+    font-size: 120%;
+}
+li a:active{
+    color: crimson;
+}
+ol li:nth-child(odd){
+    background: coral;
+    
+}
+ol li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ol li a:hover{
+    text-decoration:line-through;
+    color: rgb(107, 53, 52);
+    cursor: pointer;
+}

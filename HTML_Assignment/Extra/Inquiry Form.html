@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goodluck Insititue Application Form</title>
+    <link rel="stylesheet" href="inquiry.css">
+</head>
+<body>
+<div class="application">
+    <form action="">
+    <h2 class="mainheading">Student Application Form</h2>
+    <p>Fill the form below accurately indicating your suitability to course applying for.</p>
+    <p><span >*Reqired Fields</span></p>
+
+    <p class="name">Name:<span >*</span>
+        <input type="text" required placeholder="First" style="width:29.5%;"> 
+        <input type="text"  placeholder="Middle" style="width:29%;"> 
+        <input type="text" required placeholder="Last" style="width:29%;">
+    </p>
+
+    <p>
+    Birth Date: <input type="date" name="birth date" id="birth date" style="width:20%;"> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+    Age:<span >*</span> 
+    <input type="text" pattern="[0-9]{2}" required placeholder="Enter your Age" style="width:20%;text-align:justify;">
+    </p> 
+
+    <fieldset>
+        <legend>Gender<span >*</span></legend>
+        <input type="radio" name="gender" id="gender" required> Male &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="radio" name="gender" id="gender" required> Female  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="radio" name="gender" id="gender" required> Other
+    </fieldset>
+    
+    <p>
+        Contact Number:<span >*</span>
+        +91 <input type="text" name="contact_number" id="contactnumber" pattern="[6-9]{1}[0-9]{4} [0-9]{5}" required placeholder="xxxxx xxxxx" title="Enter Valid Number(xxxxx xxxxx)" style="width:20%;">
+        Email:<input type="email" name="email" id="email" required placeholder="goodluck@xyz.com" style="width:55%;">
+    </p>
+
+    <p>
+        Address: <textarea name="address" id="address" cols="30" rows="5"></textarea>
+    </p>
+
+    <p>
+        City:<span >*</span>
+        <input type="text" name="city" id="city" required placeholder="Cuurent city" style="width:20%" >
+        Pincode:<span >*</span>
+         <input type="text" name="pincode" id="pincode" required placeholder="400001" pattern="[0-9]{6}" style="width:20%">
+    </p>
+
+    <p>
+        Qualification:<span >*</span>
+        <select name="qualification" id="qualification" required style="width: 87.5%;">
+            <option value="">--Select Qualification--</option>
+            <option value="Post Graduate">Post Graduate</option>
+            <option value="Graduate">Graduate</option>
+            <option value="Diploma">Diploma</option>
+            <option value="HSC">HSC</option>
+            <option value="SSC">SSC</option>
+        </select>
+    </p>
+
+    <p>
+        Course:<span >*</span>
+        <select name="Course" id="course" required>
+            <option value="">--Select Course--</option>
+            <option value="OPPs">OOPs</option>
+            <option value="Data_Science">Data Science</option>
+            <option value="Web_Devlopment">Web Devlopment</option>
+            <option value="App_Devlopment">App Devlopment</option>
+        </select>
+    </p>
+
+    <p>
+        Reference:
+        <input type="checkbox" name="reference" id="reference"> Newspaper
+        <input type="checkbox" name="reference" id="reference"> Advertisement
+        <input type="checkbox" name="reference" id="reference">Social Media
+        <input type="checkbox" name="reference" id="reference">Alumni
+    </p>
+
+    <p>
+        Latest Marksheet:<span>*</span>
+        <input type="file" name="myfiles" id="myfiles" required accept=".pdf,.docx" style="width:84%;">
+    </p>
+
+    <p class="sub">
+    <input  type="Submit" value="Apply">
+    </p>
+    </form>
+</div>
+</body>
+</html>

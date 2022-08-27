@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    table{
+        text-align: center;
+        margin: 50px auto;
+    }
+   table,th,td,tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    }
+    input[type="text"]{
+        width: 85px;
+        padding: 5px;
+        border: none;
+    }
+    button{
+        background-color: rgb(174, 5, 5);
+        color: white;
+        border-radius: 10px ;
+        font-size: large;
+        width: 28px;
+        height: 27px;
+    }
+    button:hover{
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+   <div> 
+    <table >
+        <thead>
+            <th colspan="2">Product Info</th>
+            <th>Quantity</th>
+            <th>Price(per Unit)₹</th>
+            <th colspan="2">Total Price</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td >Paneer Handi</td>
+                <td><input type="text" name="Quantity" placeholder="Enter Quantity" onchange="total(this)"></td>
+                <td >259</td>
+                <td >0</td>
+                <td><button onclick="remove(this)">X</button></td>
+            </tr>
+            <tr>
+                <td>Veg Biryani</td>
+                <td><input type="text" name="Quantity1" onchange="total(this)"  placeholder="Enter Quantity"></td>
+                <td >199</td>
+                <td >0</td>
+                <td><button onclick="remove(this)" >X</button></td>
+            </tr>
+            <tr>
+                <td>Chapati</td>
+                <td><input type="text" name="Quantity1" onchange="total(this)"  placeholder="Enter Quantity"></td>
+                <td >14</td>
+                <td >0</td>
+                <td><button onclick="remove(this)" >X</button></td>
+            </tr>
+            <tr>
+                <td>Butter Milk</td>
+                <td><input type="text" name="Quantity1" onchange="total(this)"  placeholder="Enter Quantity"></td>
+                <td >30</td>
+                <td >0</td>
+                <td><button onclick="remove(this)" >X</button></td>
+            </tr>
+            <tr >
+                <th colspan="3">Sub Total</th>
+                <td id="subtotal">0</td>
+            </tr>
+        </tbody>
+    </table>
+  </div>  
+</body>
+
+<script >
+    function total(x){ 
+    let z=x.parentElement.parentElement
+    let quantity=z.children[1].children[0].value
+    let price=z.children[2].textContent
+    let total=price*quantity
+    z.children[3].textContent=total;
+    subtotal()
+    }
+
+function remove(x){ 
+    let z=x.parentElement.parentElement.children[1].children[0]
+        if(z.value>0){
+            z.value=null;
+            total(x)
+        } 
+       subtotal()
+       
+    }
+
+function subtotal(){
+    let body=document.getElementsByTagName("tbody")[0];
+    let l=body.childElementCount-1
+    var sum=0;
+    for(let i=0;i<l;i++){
+        sum+=parseFloat(body.children[i].children[3].textContent);
+    }
+    var subtot=document.getElementById("subtotal");
+    subtot.textContent=sum;
+}
+</script>
+</html>

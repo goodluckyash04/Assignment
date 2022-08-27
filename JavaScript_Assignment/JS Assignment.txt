@@ -1,0 +1,13 @@
+1)What is JavaScript Output method? 
+JavaScript Output defines the ways to display the output of a given code. 
+
+2)How to used JavaScript Output method?
+using four different ways which are listed below:
+-innerHTML : It is used to access an element. It defines the HTML content
+-document.write() : It is used for testing purpose
+-window.alert():It displays the content using an alert box
+-console.log(): It is used for debugging purposes.
+
+3)How to used JavaScript Events to do all examples
+by giving attribute in the element tag => onClick=" ",onChange=" ",etc..
+by using element.addEventListener("click",function)

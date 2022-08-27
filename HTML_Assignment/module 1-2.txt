@@ -1,0 +1,142 @@
+1 )Are the HTML tags and elements the same thing? 
+ HTML Tags: Tags are the starting and ending parts of an HTML element. They begin with < symbol and end with > symbol. Whatever written inside < and > are called tags.HTML Tags: Tags  are the starting and ending parts of an HTML element. They begin with < symbol and end with > symbol. Whatever written inside < and > are called tags.
+ Elements enclose the contents in between the tags. They consist of some kind of structure or expression. It generally consists of a start tag, content and an end tag.
+
+• What are tags and attributes in HTML? 
+    It is used to define the character of an HTML element. It always placed in the opening tag of an element. 
+
+• What are void elements in HTML? 
+   A void element is an element whose content model never allows it to have contents under any circumstances.(br,input..etc...)
+
+• What are HTML Entities? 
+   If you use the less than (<) or greater than (>) signs in your text, the browser might mix them with tags. Character entities are used to display reserved characters in HTML. (&nbsp; " ")
+
+• What are different types of lists in HTML? 
+  ordered list (ol)
+  unordered list (ul)
+
+• What is the ‘class’ attribute in HTML? 
+   The HTML class attribute is used to specify a class for an HTML element.
+	
+• What is the difference between the ‘id’ attribute and the ‘class’ attribute of HTML 
+elements? 
+  id is the unique name for every element. while class can be used for multiple element
+
+• What are the various formatting tags in HTML? 
+   <b> - Bold text
+   <strong> - Important text
+   <i> - Italic text
+   <em> - Emphasized text
+   <mark> - Marked text
+   <small> - Smaller text
+   <del> - Deleted text
+   <ins> - Inserted text
+   <sub> - Subscript text
+   <sup> - Superscript text
+  
+• How is Cell Padding different from Cell Spacing? 
+   Cellpadding basically defines the space present between a table cell's border and the content present in it. Cellspacing basically defines the space present between individual adjacent cells
+
+• How can we club two or more rows or columns into a single row or column in an HTML 
+   table? 
+   by using rowspan and colspan attributes.
+ 
+• What is the difference between a block-level element and an inline element? 
+   block-level element occupys 100% screen width of any element while inline element only use actual width of the element.
+
+• How to create a Hyperlink in HTML?
+  by using anchor tag <a>
+ 
+• What is the use of an iframe tag?
+   to embed any online available video in our website.
+ 
+• What is the use of a span tag? Explain with example? 
+   If we want to format some text inside element we can use span tag for example <p>Hello there My name is <span>Yash<span></p>
+ 
+• How to insert a picture into a background image of a web page? 
+   by using background:url()attribute
+
+• How are active links different from normal links? 
+   Some browsers recognize an active link when the mouse cursor is placed over that link, Those that don’t have a mouse cursor over that link is considered a normal link.
+
+• What are the different tags to separate sections of text?
+   <br> tag - Usually <br> tag is used to separate the line of text. It breaks the current line and conveys the flow to the next line
+   <p> tag - The <p> tag contains the text in the form of a new paragraph.
+   <blockquote> tag - It is used to define a large quoted section. If you have a large quotation, then put the entire text within <blockquote>.............</blockquote> tag.
+
+• What are logical and physical tags in HTML?
+  Logical tags are used to provide information by giving the special importance to the text. For instance, <em> tag is used to emphasize the text by representing it in italic format. Physical tags are   used to style the content only. For instance, <i> is used to display the text in italic format.
+
+...............................................................................................................................................................................................................................................................................................................................................
+Module (CSS and CSS 3) -2
+
+• What are the benefits of using CSS? 
+  CSS handles the look and feel part of a web page. Using CSS, you can control the color of the text, the style of fonts, the spacing between paragraphs, how columns are sized and laid out, etc.   CSS saves time − You can write CSS once and then reuse the same sheet in multiple HTML pages.
+
+• What are the disadvantages of CSS? 
+  CSS, CSS 1 up to CSS3, result in creating of confusion among  web browsers.
+  With CSS, what works with one browser might not always work with another. The web developers need to test for compatibility, running the program across multiple browsers.
+  There exists a scarcity of security.
+  After making the changes we need to confirm the compatibility if they appear. The similar change affects on all the browsers.
+
+• What is the difference between CSS2 and CSS3? 
+   Unlike CSS2, which was comprised of a single document, CSS3 has its specifications divided into many individual modules, which makes CSS3 a whole lot easier to handle.
+   With CSS3, the designers can now use special fonts, like those available in Google Fonts and Typecast. Earlier, with  CSS2, designers could only use “web-safe fonts” for being  100% sure to     use fonts that would always display the same on every machine.
+
+• Name a few CSS style components 
+   The components of css style are:
+   1)Selecter:HTML element name, id name, class name.
+   2)Property:It's like an attribute such as background color,font-size,position,text-align,color,border etc.
+   3)Values:which defines property or values allocate for properties.
+
+• What do you understand by CSS opacity? 
+   opacity is the transperancy of the element.
+
+• How can the background color of an element be changed? 
+   by using background-color property
+
+• How can image repetition of the backup be controlled? 
+   by using backgroung-repeat property
+
+• What is the use of the background-position property? 
+
+• Which property controls the image scroll in the background? 
+  background-attachment 
+
+• Why should background and color be used as separate properties? 
+   background changes the properties of background element ,while color changes the color of text in that element
+
+• How to center block elements using CSS1? 
+   setting margin of that elment to auto
+
+• How to maintain the CSS specifications? 
+
+• What are the ways to integrate CSS as a web page? 
+  in-line:  style=" ";
+  internal : <style><style>
+  external : link:CSS
+
+• What is embedded style sheets? 
+   Embedded style sheets are particularly useful for HTML documents that have unique style requirements from the rest of the documents in your project. 
+
+• What are the external style sheets? 
+   To apply a rule to multiple pages, an external style sheet is used. An external style sheet is a separate CSS file that can be accessed by creating a link within the head section of the webpage.
+
+• What are the advantages and disadvantages of using external style sheets? 
+   Advantages
+  1) The style of a few documents can be controlled from the site by utilizing them.
+  2) Multiple HTML elements can have numerous documents, where classes can be made.
+  3) To assemble styles in complex circumstances, selector and grouping strategies are utilized.
+
+  Disadvantages
+  1) The additional download is expected to import documents having style information.
+  2) To render the documents, the outer template ought to be stacked.
+  3) Not practical for small style definitions.
+
+• What is the meaning of the CSS selector? 
+   CSS selectors are used to "find" (or select) the HTML elements you want to style.
+   Simple selectors (select elements based on name, id, class)
+   Combinator selectors (select elements based on a specific relationship between them)
+   Pseudo-class selectors (select elements based on a certain state)
+   Pseudo-elements selectors (select and style a part of an element)
+   Attribute selectors (select elements based on an attribute or attribute value)

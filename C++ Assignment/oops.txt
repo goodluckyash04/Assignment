@@ -1,0 +1,18 @@
+Que 1.What is OOP? List OOP concepts
+Ans:
+OOPs is Object oriented programming.
+Concepts of oops are:
+1.Class
+2.Object
+3.Inheritance
+4.Polymorphism
+5.Abstraction
+6.Encapsulation
+
+
+Que 2.What is the difference between OOP and POP?
+Ans:
+-OOP is Object Oriented Programming while POP is Procedural Oriented Programming.
+-In OOP, the major emphasis is on data rather than procedure (function) while In POP, a program is written as a sequence of procedures or function.
+-OOP is Bottom-up approach while POP is Top-down approach.
+-OOP is use for solving big problems while POP is used for small problems.

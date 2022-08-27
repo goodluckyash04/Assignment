@@ -1,0 +1,38 @@
+What are the advantages of Bootstrap? 
+  Easy to prevent repetitions among multiple projects.
+  Responsive design that can be used to adapt screen sizes and choose what shows and what doesn't on any given device.
+  Maintaining consistency among projects when using multiple developer teams.
+  Quick design of prototypes.
+
+• What is a Bootstrap Container, and how does it work?
+   Containers are a fundamental building block of Bootstrap that contain, pad, and align your content within a given device or viewport.Containers are the most basic layout element in Bootstrap       and are required when using our default grid system. Containers are used to contain, pad, and (sometimes) center the content within them. While containers can be nested, most layouts do         not require a nested container. 
+
+• What are the default Bootstrap text settings? 
+   Bootstrap 4 uses a default font-size of 16px, and its line-height is 1.5. The default font-family is "Helvetica Neue", Helvetica, Arial, sans-serif. In addition, all <p> elements have margin-top: 0    and margin-bottom: 1rem (16px by default).
+
+• What do you know about the Bootstrap Grid System? 
+   Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive. Below is an example and an in-depth look at    how the grid comes together.
+
+• What is the difference between Bootstrap 4 and Bootstrap 5 
+   BASIS OF	BOOTSTRAP 4	                                                                  BOOTSTRAP 5
+  Grid System	It has 5 tier (xs, sm, md, lg, xl).	                                                It has 6 tier (xs, sm, md, lg, xl, xxl).
+  Color	                  It has limited colors.	                                                                  Extra colors added with the looks, A card improved color palette. there are various shades available to choose.
+  Jquery	                  It has jquery and all related plugins.	                              Jquery is removed and switched to vanilla JS with some working plugins
+  Internet Explorer	Bootstrap 4 supports both IE 10 and 11.	                              Bootstrap 5 doesn’t support IE 10 and 11.
+  RTL Support	It does not enable RTL(Right to Left) switching.	            It enables RTL(Right to Left) switching.
+  Offcanvas                 It does not support Offcanvas Component.	            It supports Offcanvas Component(that is it is available now).
+
+• What is a Button Group, and what is the class for a basic Button Group? 
+   “Button Groups” in Bootstrap is a class of name “btn-group” which is used to create series of buttons in groups (without spaces) vertically or horizontally. This is the basic syntax of the button     group class where each button has its own class of “btn”
+
+• How can you use Bootstrap to make thumbnails? 
+   Add an <a> tag with the class of .thumbnail around an image
+
+• In Bootstrap 4, what is flexbox? 
+  The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.
+
+• How can one create an alert in Bootstrap? 
+   Alerts are created with the .alert class, followed by one of the four contextual classes .alert-success, .alert-info, .alert-warning or .alert-danger
+
+• What is a bootstrap card and how would you create one?
+   In its simplest form, a Bootstrap card is a . card class with the . card-body class nested inside. This creates a card with a rounded border inside which you can place text, images, links, and     other Bootstrap elements.

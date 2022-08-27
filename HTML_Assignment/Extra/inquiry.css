@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px ;
+    margin: 15px 30px;
+    padding: 8px;
+}
+.application{
+    /* background-image:url(Photo/W1.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;  */
+    
+    background-color: rgb(244, 238, 238);
+    padding: 5px 20px 15px 20px;
+    border:1px solid lightgray;
+    border-radius: 4px;
+}
+.mainheading{
+  
+   text-align: center;
+   color: rgb(244, 238, 238);
+   background-color: rgb(75, 75, 130);
+   padding: 20px;
+}
+span{
+    font-size: small;
+    color: rgb(243, 64, 64);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"],
+input[type="date"],
+input[type="tel"],
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+}
+textarea,
+select{
+    width: 91.5%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+input[type="checkbox"]{
+    width: 10%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+}
+input[type="submit"]{
+    background-color:rgb(97, 97, 135);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    cursor:pointer;
+}
+fieldset{
+    width: 98.5%;
+    background-color:#fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="submit"]:hover{
+    background-color: rgb(75, 75, 130);
+}
+.sub{
+    text-align: right;
+}

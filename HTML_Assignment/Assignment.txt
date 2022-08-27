@@ -1,0 +1,27 @@
+1.Define the terms: 
+ Website:
+ A website is a collection of web pages and related content that is identified by a common domain name and published on at least one  web server.
+
+ Webpage:
+ A webpage is a hypertext document on the World Wide Web.
+ 
+ Web browser:
+ A web browser is application software for accessing the World Wide Web or a local website. 
+
+ Web server:
+ A web server is software and hardware that uses HTTP (Hypertext Transfer Protocol) and other protocols to respond to client requests  made over the World Wide Web. 
+ 
+ HTML:
+ HTML stands for Hyper Text Markup Language.
+ To make the structure of webpage we use HTML.It consits the tag element class id attribute
+ it will tell the browser how to display the content.
+
+ CSS:
+ To design the structure made in HTML we use CSS.It gives website good appearence.
+
+
+2.In how many ways can a CSS be integrated as a web page? 
+  	CSS can be integrated as a web page in HTML through 3 Ways.
+  a. External- by linking externel files to html
+  b. Internal - by using style tag(<style>) in html.
+  c. In-line - by using style attribute in required tag.
