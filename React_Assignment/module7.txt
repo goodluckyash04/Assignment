@@ -1,0 +1,13 @@
+• What is Redux? 
+   Redux is a post-positive adjective meaning 'brought back, restored' (from Latin reducere, 'to bring back') used in literature, film and video game titles.
+
+• What is Redux Thunk used for? 
+   Redux Thunk is a middleware that lets you call action creators that return a function instead of an action object.
+	
+• What is Pure Component? When to use Pure Component over Component? 
+   Pure Components are Class Components which extends React. 
+   If your React component’s render() function renders the same result given the same props and state, you can use React.PureComponent for a performance boost in some cases.
+
+• What is the second argument that can optionally be passed tosetState and what is its purpose? 
+   The second argument that can optionally be passed to setState is a callback function which gets called immediately after the setState is completed and the components get re-rendered. 
+   If you want your program to update the value of a state using setState and then perform certain actions on the updated value of state then you must specify those actions in a function which    should be the second argument of the setState. If we would not do so then those actions will be performed on the previous value of state because of asynchronous nature of setState.
