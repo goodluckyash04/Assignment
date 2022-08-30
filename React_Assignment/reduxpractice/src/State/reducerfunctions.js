@@ -3,7 +3,8 @@ import data from '../data.json'
 const initialState = {
   cart: 0,
   balance: 0,
-  products:data.products
+  products:data.products,
+  notes:data.notes
 };
 export const updatecart = (state = initialState.cart, action) => {
   if (action.type === "increase") {
@@ -48,3 +49,7 @@ export const product = (state = initialState.products, action) => {
   }
   return state;
 };
+
+export const note = (state = initialState.notes, action)=>{
+  return state
+}

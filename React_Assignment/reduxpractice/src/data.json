@@ -55,5 +55,17 @@
       "title": "Raw mango",
       "price": "92"
     }
+  ],
+  "notes":[
+    {
+      "id": "1",
+      "title": "Go to Mall",
+      "description": "mall on sunday at 4pm"
+    },
+    {
+      "id": "2",
+      "title": "Buy Cloths",
+      "description": "Cloths for tomorrow Party"
+    }
   ]
 }

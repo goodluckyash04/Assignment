@@ -1,10 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
-import {product, updatebalance, updatecart} from "../reducerfunctions";
+import {note, product, updatebalance, updatecart} from "../reducerfunctions";
 
 const rootReducer=()=>({    //combined reducer
     cart:updatecart,
     balance:updatebalance,
-    product:product
+    product:product,
+    notes:note
 })
 
 export const store=configureStore({reducer:rootReducer()})
