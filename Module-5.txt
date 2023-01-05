@@ -1,0 +1,80 @@
+.   What do you understand By Database 
+    A database is information that is set up for easy access, management and updating. Computer databases typically store aggregations of data records or files that contain information, such         as sales transactions, customer data, financials and product information.
+
+ What is Normalization? 
+    Normalization is a database design technique that reduces data redundancy and eliminates undesirable characteristics like Insertion, Update and Deletion Anomalies.
+
+ What is Difference between DBMS and RDBMS? 
+     DBMS stands for Database Management System, and RDBMS is the acronym for the Relational Database Management system. In DBMS, the data is stored as a file, whereas in RDBMS,        data is stored in the form of tables.
+  
+ What do you understand By Data Redundancy? 
+     Data redundancy is a condition created within a database or data storage technology in which the same piece of data is held in two separate places.
+
+ What is DDL Interpreter? 
+     It processes the DDL statements into a set of table containing meta data (data about data)
+ 
+ What is DML Compiler in SQL? 
+     It processes the DML statements into low level instruction (machine language), so that they can be executed.
+
+ What is SQL Key Constraints writing an Example of SQL Key Constraints
+     constrains:
+     primary key : unique+ not null(accepts null only 1 times)
+     unique key  
+     not null : makes zero 
+     check : match condition
+     default : sets default value 
+ 
+ What is save Point? How to create a save Point write a Query? 
+
+ What is trigger and how to create a Trigger in SQL? 
+     A trigger is a special type of stored procedure that automatically runs when an event occurs in the database server. DML triggers run when a user tries to modify data through a data      manipulation language (DML) event. DML events are INSERT, UPDATE, or DELETE statements on a table or view.
+Delimiter $$
+create trigger tr_up_sales                                       
+after update
+on sales 
+for each row
+begin 
+if old.quantity<>new.quantity Then
+insert into sales_update(id,before_quantity,after_quantity) values(null,old.quantity,new.quantity);
+end if;
+End;
+$$
+
+
+
+TASKS
+a) Get First_Name from employee table using Tom name “Employee Name”.
+   
+b) Get FIRST_NAME, Joining Date, and Salary from employee table. 
+   SELECT `First_name`, `salary`, `Joining_Date` FROM `employee`
+
+c) Get all employee details from the employee table order by First_Name Ascending and Salary descending?
+   
+d) Get employee details from employee table whose first name contains ‘J’.
+    SELECT * FROM `employee` WHERE First_name LIKE "J%" 
+
+e) Get department wise maximum salary from employee table order by salary  ascending?
+    
+f) Select first_name, incentive amount from employee and incentives table for those employees who have incentives and incentive amount greater than 3000 
+    select * from incentive Left join employee on Employee_ref_id = Employee_id; 
+    select `first_name, incentive amount`  from table_name where incentive_amount > 3000
+
+g) Create After Insert trigger on Employee table which insert records in view table
+     
+    
+
+Retrieve the below data from above table 
+a) All orders for more than $1000. 
+        
+b) Names and cities of all salespeople in London with commission above 0.12 
+    SELECT `SName`, `City` FROM `salesperson` WHERE COMM > '.12'
+
+c) All salespeople either in Barcelona or in London 
+    SELECT * FROM `salesperson` WHERE City = 'barcelona' or City = 'london'; 
+
+d) All salespeople with commission between 0.10 and 0.12. (Boundary values should be excluded). 
+   SELECT * FROM `salesperson` WHERE COMM>.10 AND COMM<.12;
+
+e) All customers excluding those with rating <= 100 unless they are located in Rome
+    SELECT * FROM `customer` WHERE Rating >100 or City = 'Rome'
+   
